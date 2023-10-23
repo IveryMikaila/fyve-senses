@@ -24,3 +24,8 @@
 html,body{
     margin: 0;
 }
+.App{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
