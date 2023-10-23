@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import '../../Styles/Navigation.css';
 import Hamburger from 'hamburger-react'
 
 
@@ -6,23 +7,28 @@ const Navbar = () => {
 const [open,setOpen] = useState(false);
 const Sidebar = ()=>{
 return(<>
-<div>
-<a href='/'>Home</a>
-<a href='/about-us'>About</a>
-<a href='/our-services'>Our Services</a>
-<a href='/work'>Work</a>
-<a href='/contact'>Contact Us</a>
+<div className='sidebar active'>
+<h1>Fyve Senses</h1>
+<hr className='line' />
+  <div className='sideBarLinks'>
+  <a className='sidebarLink' href='/'>Home</a>
+<a className='sidebarLink' href='/about-us'>About</a>
+<a className='sidebarLink' href='/our-services'>Our Services</a>
+<a className='sidebarLink' href='/work'>Work</a>
+<a className='sidebarLink' href='/contact'>Contact Us</a>
+  </div>
 </div>
 
 </>)
 }
 
 
-
   return (
     <>
-<Hamburger toggled={open} toggle={setOpen} />
-{open ? <Sidebar/> : <div> Nothing to see here</div>}
+    <div className='icon-container'>
+    <Hamburger size={48} label="Show menu" toggled={open} toggle={setOpen} />
+    </div>
+{open ? <Sidebar/> : <div className='sidebar'> Nothing to see here</div>}
 
     </>
   )

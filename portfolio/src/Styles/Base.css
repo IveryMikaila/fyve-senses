@@ -20,3 +20,7 @@
     font-family:"RedHatLightItalic" ;
     src: url("../assets/fonts/RedHatText-LightItalic.ttf");
 }
+
+html,body{
+    margin: 0;
+}
