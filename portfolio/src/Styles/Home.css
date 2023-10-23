@@ -1,0 +1,55 @@
+:root{
+    --theme-blue: #0000FF;
+   --theme-pink: #ED125A;
+    --theme-purple: #662D91;
+}
+
+@font-face {
+    font-family:"archivo" ;
+    src: url("../assets/fonts/ArchivoBlack-Regular.ttf");
+}
+@font-face {
+    font-family:"paytone" ;
+    src: url("../assets/fonts/PaytoneOne-Regular.ttf");
+}
+@font-face {
+    font-family:"RedHatLight" ;
+    src: url("../assets/fonts/RedHatText-Light.ttf");
+}
+@font-face {
+    font-family:"RedHatLightItalic" ;
+    src: url("../assets/fonts/RedHatText-LightItalic.ttf");
+}
+
+
+
+
+/* Website Intro Animation */
+.pageIntro{
+    background-color: #fff;
+    font-family:"archivo" ;
+    color: #000;
+    animation: introAnimation 10s  1;
+    transition: all ease-in-out;
+}
+@keyframes introAnimation {
+    0%{
+        background-color: var(--theme-purple);
+        color: #fff;
+        font-family:"paytone" ;
+    }
+    25%{
+        background-color: var(--theme-pink);
+        color: #fff;
+        font-family:"archivo" ;
+    }
+50%{
+    background-color: var(--theme-blue);
+    color: #fff;
+    font-family:"paytone" ;
+}
+100%{
+    background-color: #fff;
+    font-family:"archivo" ;
+}
+}
