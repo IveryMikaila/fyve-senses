@@ -1,5 +1,4 @@
 /* Navbar Styles */
-
 .icon-container{
 position: fixed;
 right: 0;
@@ -45,8 +44,12 @@ display: none;
 text-align: center;
 margin-top: 70px;
 }
+.sidebar-logo{
+    text-decoration: none;
+    color: #000;
+}
 
-@keyframes colorAnimation {
+/* @keyframes colorAnimation {
 0%{
 color: var(--theme-blue);
 }
@@ -56,4 +59,4 @@ color: var(--theme-blue);
 100%{
     color: var(--theme-pink);
 }
-}
+} */

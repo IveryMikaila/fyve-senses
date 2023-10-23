@@ -52,3 +52,35 @@
 }
 
 /* HomePage */
+
+.home-logo{
+    font-family:"archivo" ;
+    margin: 50px;
+    font-size: 180px;
+}
+.home-logo::after{
+    content: "";
+    animation: logo 7s linear infinite;
+}
+
+ @keyframes logo {
+    0%{
+content: "Design";
+    }
+    100%{
+        content: "Fyve Senses";
+    }
+ }
+.home-line{
+margin: 50px;
+}
+.quickLinks{
+    margin-left: 50px;
+    font-size: 30px;
+    font-family:"RedHatLight" ;
+}
+.row1 a, .row2 a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 50px; ;
+}

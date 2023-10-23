@@ -16,6 +16,8 @@ function introAnimation (){
 intro.style.display ="none"
 }
 
+
+
 useEffect(()=>{
 
   setTimeout(introFade, 6005)
@@ -36,6 +38,21 @@ useEffect(()=>{
 
 
 {/* Home Page */}
+<h1 className='home-logo'> </h1>
+<div className='quickLinks'>
+  <div className='row1'>
+    <a href='#'>Facebook</a>
+    <a href='#'>Pinterest</a>
+    <a href='mailto:'>info@fyvesenses.com</a>
+  </div>
+  <div className='row2'>
+  <a href='#'>Instagram</a>
+    <a href='#'>LinkedIn</a>
+    <a href='mailto:'>123-456-7891</a>
+  </div>
+</div>
+<hr className='home-line' />
+
 <div>Home Page</div>
 
     </div>
