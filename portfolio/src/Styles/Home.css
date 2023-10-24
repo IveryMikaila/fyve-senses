@@ -52,11 +52,11 @@
 }
 
 /* HomePage */
-
 .home-logo{
     font-family:"archivo" ;
-    margin: 50px;
-    font-size: 180px;
+    margin: 0px;
+    margin-left: 50px;
+    font-size: 150px;
 }
 .home-logo::after{
     content: "";
@@ -72,15 +72,44 @@ content: "Design";
     }
  }
 .home-line{
+  
 margin: 50px;
+margin-top: 0;
 }
 .quickLinks{
     margin-left: 50px;
     font-size: 30px;
     font-family:"RedHatLight" ;
 }
-.row1 a, .row2 a{
+.row1 {
+    display: flex;
+   flex-direction: row;
+}
+.row1 a {
     text-decoration: none;
     color: #000;
-    margin-right: 50px; ;
+   margin: 10px;
 }
+
+
+
+
+/* Homepage Responsive Styles */
+@media screen and (max-width: 900px){
+.quickLinks{
+    font-size: 16px;
+}
+.home-logo{
+    font-size: 75px;
+}
+
+}
+@media screen and (max-width: 600px){
+    .home-logo{
+        font-size: 50px;
+    }
+
+    .row1 {
+       flex-direction: column;
+    }
+    }

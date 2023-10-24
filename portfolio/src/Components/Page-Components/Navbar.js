@@ -8,10 +8,11 @@ const [open,setOpen] = useState(false);
 const Sidebar = ()=>{
 return(<>
 <div className='sidebar active'>
+
   <a className='sidebar-logo' href='/'>
   <h1>Fyve Senses</h1>
   </a>
-<hr className='line' />
+
   <div className='sideBarLinks'>
   <a className='sidebarLink' href='/'>Home</a>
 <a className='sidebarLink' href='/about-us'>About</a>
