@@ -41,8 +41,8 @@ useEffect(()=>{
 <h1 className='home-logo'> </h1>
 <div className='quickLinks'>
   <div className='row1'>
-    <a href='#'>Instagram</a>
-    <a href='#'>+1 234-567-8910</a>
+    <a href='#' target='_blank'>Instagram</a>
+    <a href='tel:1234567890'>+1 234-567-8910</a>
     <a href='mailto:'>info@fyvesenses.com</a>
   </div>
 </div>
