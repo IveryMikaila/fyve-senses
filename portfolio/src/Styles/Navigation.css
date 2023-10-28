@@ -1,11 +1,12 @@
 
 /* Navbar Styles */
 .icon-container{
-z-index: 3;
 margin-left: auto;
 padding: 50px;
 }
-
+.hamburger-react{
+    z-index: 8;
+}
 .sidebar{
 display: none;
 background-color: #fff;
@@ -19,7 +20,7 @@ justify-content: center;
    height: 100dvh;
    margin: 0;
    position: fixed;
-   z-index: 2;
+   z-index: 7;
 }
 
 .sidebar-logo{
@@ -50,6 +51,9 @@ scale: 1.2;
 
 .nav-logo{
     color:#000;
+    font-family:"archivo" ;
+    font-size: 30px;
+    text-decoration: none;
 }
 /* Different classes */
 .sidebar.active.white{
@@ -81,7 +85,6 @@ justify-content: center;
 }
 
 .iconContainerContact{
-    z-index: 3;
     padding: 50px;
     display: flex;
     justify-content: space-between;
@@ -91,7 +94,10 @@ justify-content: center;
         display: none;
     }
     .navLogoContact{
-        color: #fff;
+        color: var(--theme-pink);
+        font-family:"archivo" ;
+    font-size: 30px;
+        text-decoration: none;
     }
 
 /* Navbar Responsive Styles */

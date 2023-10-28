@@ -37,7 +37,7 @@ function changeNavbar (){
     setColor('white');
   } 
   else if (location.pathname == '/about-us' || location.pathname == '/our-services' || location.pathname == '/work'){
-    setColor('pink');
+    setColor('black');
   }
 }
 
@@ -48,7 +48,7 @@ changeNavbar();
   return (
     <> 
     <div className={location.pathname == '/' ? 'icon-container' : 'iconContainerContact' }>
-      <p className={location.pathname == '/' ? 'navLogoHome' : location.pathname == '/contact' ? 'navLogoContact' : 'nav-logo' }>Fyve Senses</p>
+      <a href='/' className={location.pathname == '/' ? 'navLogoHome' : location.pathname == '/contact' ? 'navLogoContact' : 'nav-logo' }>Fyve Senses</a>
     <Hamburger className='menu' color={color} size={48} label="Show menu" toggled={open} toggle={setOpen} />
     </div>
 
