@@ -8,6 +8,7 @@ import Work from "./Components/Work";
 import Contact from "./Components/Contact";
 import Navbar from "./Components/Page-Components/Navbar";
 import Footer from "./Components/Page-Components/Footer";
+import {AnimatePresence} from 'framer-motion'
 
 
 function App() {
@@ -32,6 +33,7 @@ useEffect(()=>{
   return (
     <div className="App" id="App">
 <Navbar />
+<AnimatePresence>
 <Routes>
 <Route path="/" element={<Home />} />
 <Route path="/about-us" element={<About />} />
@@ -39,6 +41,7 @@ useEffect(()=>{
 <Route path="/work" element={<Work />} />
 <Route path="/contact" element={<Contact />} />
 </Routes>
+</AnimatePresence>
 <Footer />
     </div>
   );
