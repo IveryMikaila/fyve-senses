@@ -5,8 +5,7 @@ import "../../Styles/Navigation.css"
 const Footer = () => {
   return (
     <div className='footer'>
-   <hr className='footer-line'/>
-
+ 
 <div className='quick-links'>
 <a href='#' className='footer-link'> FAQ</a>
 <a href='#' className='footer-link'>About</a>
@@ -17,7 +16,7 @@ const Footer = () => {
 </div>
 
 <div className='footer-message'>
-<p className='copyright'>© 2023 Copyright Fyve Senses. <a target='_blank' href='https://mikailaivery.com/'> ♡</a></p>
+<p className='copyright'>© 2023 Copyright Fyve Senses. <a target='_blank' href='https://mikailaivery.com/'>✨</a></p>
 </div>
 
 

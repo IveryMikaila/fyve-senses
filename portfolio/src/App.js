@@ -1,6 +1,6 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "../src/Styles/Base.css";
-import { BrowserRouter,Route,Routes } from "react-router-dom";
+import {Route,Routes, useLocation } from "react-router-dom";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Services from "./Components/Services";
@@ -11,10 +11,27 @@ import Footer from "./Components/Page-Components/Footer";
 
 
 function App() {
+  const location = useLocation();
+function bgColor (){
+let app = document.getElementById('App');
+
+if (location.pathname == '/'){
+  app.style.backgroundColor = '#fff';
+}
+else if (location.pathname == '/contact'){
+  app.style.backgroundColor = '#000';
+} 
+else if (location.pathname == '/about-us' || location.pathname == '/our-services' || location.pathname == '/work'){
+  app.style.backgroundColor = '#fff';
+}
+}
+
+useEffect(()=>{
+  bgColor();
+},[])
   return (
-    <div className="App">
-      <Navbar />
-<BrowserRouter>
+    <div className="App" id="App">
+<Navbar />
 <Routes>
 <Route path="/" element={<Home />} />
 <Route path="/about-us" element={<About />} />
@@ -22,7 +39,6 @@ function App() {
 <Route path="/work" element={<Work />} />
 <Route path="/contact" element={<Contact />} />
 </Routes>
-</BrowserRouter>
 <Footer />
     </div>
   );

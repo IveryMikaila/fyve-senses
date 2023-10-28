@@ -8,13 +8,13 @@ padding: 50px;
 
 .sidebar{
 display: none;
+background-color: #fff;
 }
 .sidebar.active{
     display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-   background-color: #fff;
    width: 100%;
    height: 100dvh;
    margin: 0;
@@ -34,21 +34,65 @@ justify-content: center;
     justify-content: center;
     align-items: center;
 }
-
-
-.sidebarLink{
+.sideBarLinks a{
     color: #000;
     margin: 10px;
     font-size: 20px;
     text-decoration: none;
     font-family:"RedHatLight" ;
     transition: ease-in-out 0.5s;
-  
 }
-.sidebarLink:hover{
+
+.sideBarLinks a:hover{
 color: var(--theme-blue);
 scale: 1.2;
 }
+
+.nav-logo{
+    color:#000;
+}
+/* Different classes */
+.sidebar.active.white{
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+   width: 100%;
+   height: 100dvh;
+   margin: 0;
+   position: fixed;
+   z-index: 2;
+   background-color: #000;
+}
+
+.sidebar-logo.white{
+    text-decoration: none;
+    color: #fff;
+    font-family:"archivo" ;
+    font-size: 50px;
+}
+.sideBarLinks.white a{
+    color: #fff;
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family:"RedHatLight" ;
+    transition: ease-in-out 0.5s;
+}
+
+.iconContainerContact{
+    z-index: 3;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .navLogoHome{
+        display: none;
+    }
+    .navLogoContact{
+        color: #fff;
+    }
 
 /* Navbar Responsive Styles */
 @media screen and (max-width: 750px) {
@@ -73,18 +117,22 @@ scale: 1.2;
 /* Footer Styles */
 .footer{
  margin-top: auto;
+ background-color: #000;
+ color: #fff;
+ padding: 40px 30px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
-.footer-line{
-    margin: 0px 50px 20px;
 
-}
 .quick-links, .footer-message{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .footer-link{
-    color: #000;
+    color: #fff;
     text-decoration: none;
     margin: 20px;
     font-family:"RedHatLight" ;
@@ -96,7 +144,7 @@ scale: 1.2;
     margin: 0px 20px 20px;
 }
 .copyright a{
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
