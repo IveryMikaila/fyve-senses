@@ -4,7 +4,12 @@ import '../Styles/Contact.css'
 
 const Contact = () => {
   return (
-    <div className='contact-page'>
+    <motion.div
+    
+    initial={{opacity:0, transition: { duration: 1.5 }}}
+    animate={{opacity:1, transition: { duration: 1.5 }}}
+    exit={{opacity:0,transition: { duration: 1.5 }}}
+    className='contact-page'>
       <h1>Let’s Bring Those Ideas To Life.</h1>
 
       <form className='form' action="https://formsubmit.co/fyvesensestest@gmail.com" method="POST">
@@ -23,7 +28,7 @@ const Contact = () => {
     <button type="submit">Send</button >
 </form>
 
-    </div>
+    </motion.div>
   )
 }
 
