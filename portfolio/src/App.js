@@ -7,6 +7,8 @@ import Services from './Components /Pages/Services'
 import Work from './Components /Pages/Work'
 import Contact from './Components /Pages/Contact'
 
+// Styles
+import './Styles/Global.css'
 
 function App() {
   return (

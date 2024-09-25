@@ -1,0 +1,59 @@
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+.nav-menu li{
+   list-style: none;
+   margin: 10px;
+}
+.nav-menu h1{
+    margin: 10px;
+    z-index: 100;
+}
+.hamburger{
+    display: none;
+}
+.hamburger-menu{
+    display: none;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 550px) {
+.nav-menu ul{
+    display: none;
+}
+.hamburger{
+    display: block;
+    margin: 10px;
+    z-index: 100;
+}
+.hamburger-menu{
+    position: absolute;
+    background-color: white;
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hamburger-menu ul{
+    display: block;
+    font-size: 32px;
+    text-align: center;
+}
+.hamburger-menu a{
+    margin: 10px;
+}
+
+  }
+  
