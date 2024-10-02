@@ -27,7 +27,7 @@ changeLinkColors();
 },[])
 
 function MobileMenu(){
-return (<div className='hamburger-menu'>
+return (<div className={location.pathname==='/' ? `hamburger-menu`: `hamburger-menu-black`}>
   <ul>
   <li><a className={location.pathname=== '/' ? `ham-links-black` : `ham-links-white`} href='/'>Home</a></li>
   <li><a className={location.pathname=== '/' ? `ham-links-black` : `ham-links-white`} href='/services'>Services</a> </li>

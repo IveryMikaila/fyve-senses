@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 // Components
 import NavBar from './Components /Navigation/Navbar'
 import Footer from './Components /Navigation/Footer'
@@ -11,8 +11,10 @@ import Contact from './Components /Pages/Contact'
 import './Styles/Global.css'
 
 function App() {
+let locattion = useLocation();
+
   return (
-    <div className="App">
+    <div className={locattion.pathname ==='/' ?`App-white`: `App-black` }>
 <NavBar />
 
 {/* Pages */}

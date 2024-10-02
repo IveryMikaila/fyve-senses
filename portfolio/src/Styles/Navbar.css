@@ -33,6 +33,9 @@
 .hamburger-menu{
     display: none;
 }
+.hamburger-menu-black{
+    display: none;
+}
 
 /* Responsive Design */
 
@@ -65,10 +68,28 @@
 .hamburger-menu a{
     margin: 10px;
 }
+.hamburger-menu-black{
+    position: absolute;
+    background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hamburger-menu-black ul{
+    display: block;
+    font-size: 32px;
+    text-align: center;
+    padding: 0;
+}
+.hamburger-menu-black a{
+    margin: 10px;
+}
 .ham-links-black{
-    color: black !important;
-  
-    
+    color: black !important;  
 }
 .ham-links-white{
     color: white !important;

@@ -14,8 +14,14 @@ body{
 h1,h2,h3{
     font-family: 'Arial Black';
 }
-.App{
+.App-black, .App-white{
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
+}
+.App-black{
+    background-color: black;
+}
+.App-white{
+    background-color: white;
 }
