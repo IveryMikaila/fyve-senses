@@ -17,10 +17,10 @@ let location = useLocation();
 <h3>LEARN MORE</h3>
 <ul>
   <li>
-    <a href='/services'>Our Services</a>
+    <a className={location.pathname ==='/' ? `foot-link-black`: `foot-link-white`} href='/services'>Our Services</a>
   </li>
   <li>
-    <a href='/work'>Work</a>
+    <a className={location.pathname ==='/' ? `foot-link-black`: `foot-link-white`} href='/work'>Work</a>
   </li>
 </ul>
 </div>
@@ -29,16 +29,16 @@ let location = useLocation();
 <h3>FOLLOW US</h3>
 <ul>
   <li>
-    <a href='https://tallerderafa.com/' target='_blank'>Taller De Rafa</a>
+    <a className={location.pathname ==='/' ? `foot-link-black`: `foot-link-white`} href='https://tallerderafa.com/' target='_blank'>Taller De Rafa</a>
   </li>
   <li>
-    <a href='https://www.instagram.com/fyvesenses/' target='_blank'>Instagram</a>
+    <a className={location.pathname ==='/' ? `foot-link-black`: `foot-link-white`} href='https://www.instagram.com/fyvesenses/' target='_blank'>Instagram</a>
   </li>
   <li>
-    <a href='' target='_balnk'>Linkedin</a>
+    <a className={location.pathname ==='/' ? `foot-link-black`: `foot-link-white`} href='' target='_balnk'>Linkedin</a>
   </li>
   <li>
-    <a href='mailto:Genesis@fyvesenses.com' target='_blank'>Email</a>
+    <a className={location.pathname ==='/' ? `foot-link-black`: `foot-link-white`} href='mailto:Genesis@fyvesenses.com' target='_blank'>Email</a>
   </li>
 </ul>
 </div>

@@ -85,6 +85,12 @@ margin-top: auto;
 .footer-white{
     color: white;
 }
+.foot-link-black{
+    color: black !important;
+}
+.foot-link-white{
+    color: white !important;
+}
 .footer-menu{
     display: flex;
     justify-content: space-between;
@@ -147,3 +153,4 @@ font-size: 18px;
         font-size: 20px;
     }
 }
+
