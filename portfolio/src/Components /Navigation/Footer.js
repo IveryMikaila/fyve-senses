@@ -1,8 +1,11 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
 
 const Footer = () => {
+let location = useLocation();
+
   return (
-    <div className='footer'>
+    <div className={location.pathname ==='/' ? `footer-black` : `footer-white`}>
       <div className='footer-menu'>
         <div>
           <h3>Where Creativity is Engineered.</h3>

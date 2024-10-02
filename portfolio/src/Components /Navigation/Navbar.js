@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 import '../../Styles/Navbar.css'
 import { Pivot as Hamburger } from 'hamburger-react'
 import black_logo from '../../assets /5enses_black.png'
+import white_logo from '../../assets /5enses_white.png'
 
 const Navbar = () => {
 const [open,setOpen] = useState(false);
@@ -41,7 +42,7 @@ return (<div className='hamburger-menu'>
       <div className='nav-menu'>
 <h1>
   <a href='/'>
-<img src={black_logo} alt='fyve-senses company logo in black colorway'/>
+<img src={location.pathname ==='/' ? black_logo : white_logo} alt='fyve-senses company logo in black colorway'/>
   </a>
 </h1>
 

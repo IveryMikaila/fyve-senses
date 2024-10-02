@@ -76,10 +76,15 @@
   }
   
   /* Footer Styles */
-.footer{
+.footer-black, .footer-white{
 margin-top: auto;
 }
-
+.footer-black{
+    color: black;
+}
+.footer-white{
+    color: white;
+}
 .footer-menu{
     display: flex;
     justify-content: space-between;
