@@ -1,0 +1,10 @@
+
+.service-h1{
+    text-align: right;
+    margin: 50px;
+    font-size: 100px;
+    color: white;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
