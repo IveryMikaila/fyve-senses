@@ -13,7 +13,6 @@ const Services = () => {
   <p className='service-p'>{service.description}</p>
   </div>)
 })}
-
     </div>
   )
 }

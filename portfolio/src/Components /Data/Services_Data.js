@@ -33,7 +33,6 @@ concepts to life. We excel in turning sketches into tangible, stylish garments, 
                 class:`card-5`,
                 description:`We collaborate closely with clients to bring their visions to life, offering insightful guidance and innovative solutions every step of the way. Our approach blends creativity with strategic thinking, ensuring that each project is not only visually stunning but also resonates deeply with its intended audience. Whether it’s for brand activations or immersive experiences, our team crafts environments and narratives that engage, inspire, and leave a lasting impact. Our commitment is to transform ideas into unforgettable experiences, making each project a unique journey of discovery and engagement.`
                 
-                }
-      
+                }     
 
 ]
