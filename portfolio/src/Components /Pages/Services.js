@@ -8,10 +8,10 @@ const Services = () => {
     <div>
       <h1 className='service-h1'>Services</h1>
 {service_data.map((service)=>{
-  return(<>
-  <h2>{service.name}</h2>
-  <p>{service.description}</p>
-  </>)
+  return(<div className={service.class}>
+  <h2 className='service-h2'>{service.name}</h2>
+  <p className='service-p'>{service.description}</p>
+  </div>)
 })}
 
     </div>
