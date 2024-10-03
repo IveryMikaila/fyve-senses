@@ -21,7 +21,9 @@ h1,h2,h3{
 }
 .App-black{
     background-color: black;
+    color: white;
 }
 .App-white{
     background-color: white;
+    color: black;
 }
