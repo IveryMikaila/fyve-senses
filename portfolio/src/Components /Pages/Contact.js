@@ -30,7 +30,7 @@ const[message,setMessage] = useState("");
       alert('Thanks, your message has been received!')
     }
 
-    // Rest Form
+    // Reset Form
     setName("");
     setEmail("");
     setPhone("");
