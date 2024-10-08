@@ -67,10 +67,21 @@ min-height: 100dvh;
         font-size: 20px;
     }
 }
-
-@media screen and (max-height: 700px) {
-    .card-1,.card-2,.card-3,.card-4,.card-5{
-        position: relative;
+@media screen and (max-width: 600px) {
+    .service-h2{
+        font-size: 50px;
+    }
+    .service-p{
+        font-size: 16px;
     }
 
+}
+
+@media screen and (max-height: 700px) {
+    .service-h2{
+        font-size: 30px;
+    }
+    .service-p{
+        font-size: 12px;
+    }
 }
